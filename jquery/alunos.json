@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "nome": "Nome aluno 1",
+        "email": "aluno1@email.com"
+    },
+    {
+        "id": 2,
+        "nome": "Nome aluno 2",
+        "email": "aluno2@email.com"
+    },
+    {
+        "id": 3,
+        "nome": "Nome aluno 3",
+        "email": "aluno3@email.com"
+    },
+    {
+        "id": 4,
+        "nome": "Nome aluno 4",
+        "email": "aluno4@email.com"
+    },
+    {
+        "id": 5,
+        "nome": "Nome aluno 5",
+        "email": "aluno5@email.com"
+    },
+    {
+        "id": 6,
+        "nome": "Nome aluno 6",
+        "email": "aluno6@email.com"
+    },
+    {
+        "id": 7,
+        "nome": "Nome aluno 7",
+        "email": "aluno7@email.com"
+    },
+    {
+        "id": 8,
+        "nome": "Nome aluno 8",
+        "email": "aluno8@email.com"
+    },
+    {
+        "id": 9,
+        "nome": "Nome aluno 9",
+        "email": "aluno9@email.com"
+    },
+    {
+        "id": 10,
+        "nome": "Nome aluno 10",
+        "email": "aluno10@email.com"
+    }
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--Sessão do jquery e boostrap-->
+    <!--Exemplo de import via CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <!--Sessão de estilo personalizado e boostrap-->
+    <link rel="stylesheet" href="./estilo.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <title>Exemplo de um C.R.U.D usando JQuery</title>
+</head>
+<body>
+    <h2>
+        <ul>
+            <li>C - Create - Criar/Inserir</li>
+            <li>R - Read - Consultar</li>
+            <li>U - Update - Atualizar</li>
+            <li>D - Delete - Deletar</li>
+        </ul>
+
+    </h2>
+
+    <pre>
+        Dica: Para os componentes do html, geramente o pessoal, 
+        utiliza um padrão (convenção) de como 'identifcar' 
+        os tempos de elemento de acordo com o seu nome
+
+        <ul>
+            <li>form = frmNomeDoElemento</li>
+            <li>input text = txtNomeDoElemento</li>
+            <li>input checkbox = chkNomeDoElemento</li>
+            <li>input area = areaNomeDoElemento</li>
+            <li>input button = btnNomeDoElemento</li>
+        </ul>
+    </pre>
+
+    <h1> Exemplo C.R.U.D</h1>
+
+    <form id="frmCadastro">
+        <div>
+            <label for="txtNome">Nome:</label>
+            <input type="text" id="txtNome" name="txtNome"
+            placeholder="Informe seu nome" required>
+        </div>
+        <div>
+         <label for="txtEmail">E-mail:</label>
+         <input type="text" id="txtEmail" name="txtEmail"
+          placeholder="Informe seu e-mail" required>         
+        </div>
+        <button type="submit" id="btnEnviar">Enviar</button>
+        <button type="button" id="btnCancelar">Cancelar</button>
+    </form>
+
+    <table class="table">
+        <thead class="table-primary">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tbConteudo"></tbody>
+    </table>
+
+    <!--Botão para adicionar novo regsitro-->
+    <button id="btnNovo" name="txtNovo">Novo</button>
+
+    <!--pulo do GATO-->
+    <!--Inserir script o no final página-->
+    <script src="./crud.js"></script>
+
+</body>
+
+</html>
